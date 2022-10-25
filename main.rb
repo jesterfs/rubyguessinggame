@@ -11,10 +11,10 @@ if answer.downcase == 'no'
   return "Jerk."
 end
 
-correctAnswer = 60
+correctAnswer = rand(10) + 1
 success = false
 
-puts "I'm thinking of a number between 1 and 100. "
+puts "I'm thinking of a number between 1 and 10. "
 3.times do
   puts 'take a guess'
   response = gets.chomp
@@ -30,7 +30,7 @@ end
 
 if success == false
   puts 'Strike 3! You are out!'
-
+  puts "The correct answer was #{correctAnswer}"
 end
 
 
